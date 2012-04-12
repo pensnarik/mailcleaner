@@ -11,8 +11,8 @@ def main(argv):
   black_list = [ b'list.avia.ru', b'dotnews.ru', b'info@molotok.ru', b'subscribe.ru' ]
 
   m = poplib.POP3('pop.yandex.ru')
-  m.user('bff7755a')
-  m.pass_('4598276994')
+  m.user('user')
+  m.pass_('password')
   numMessages = len(m.list()[1])
   TotalCount = 0
   print('Logged in OK. Total messages in mailbox: {c}'.format(c = numMessages))
